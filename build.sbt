@@ -1,6 +1,8 @@
 
 val rootProjName = "endy"
 
+herokuAppName in Compile := "dry-retreat-6382"
+
 //root
 lazy val root = project.in(file("."))
   .settings(commonSettings:_*)
@@ -12,6 +14,7 @@ lazy val commonSettings = Seq(
   version := "1.0-SNAPSHOT",
   name := rootProjName,
   scalaVersion := "2.11.6"
+
 )
 
 //define the server project
